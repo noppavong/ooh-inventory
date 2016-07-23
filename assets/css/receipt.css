@@ -1,0 +1,61 @@
+@font-face
+{
+font-family:smb_advance_light;
+src: url(../fonts/SMBAdvance_Light.ttf);
+}
+@font-face
+{
+font-family:angsana;
+src: url(../fonts/angsa.ttf);
+}
+@font-face
+{
+font-family:angsana_bold;
+src: url(../fonts/angsab.ttf);
+}
+p,span
+{
+    font-size: 12px;
+}
+td
+{
+    font-size: 12px;
+}
+p,span,small
+{
+    font-family: angsana!important;
+}
+h1,h2,h3,h4,h5,strong
+{
+    font-family: angsana_bold!important;
+}
+tr {
+
+   height: 25px;
+   border: 0;
+}
+
+.report-title tbody td{
+    padding:0!important;
+   border: 0!important;
+
+}
+.detail tbody td{
+ border: 1px  solid!important;
+}
+
+.detail thead th{
+ border: 1px solid!important;
+}
+#title-left,#title-right{
+    padding:20px;
+}
+
+#label-copy{
+ display:inline-block;
+ background-color:black;
+ vertical-align: top;
+ color:white;
+ text-align:center;
+ padding:0.2em 1em;
+}

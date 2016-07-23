@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond $1 !^(index\.php|images|res|script|css|img|assets|upload|robots\.txt) [NC]
+    RewriteRule ^(.*)$ /ooh-inventory/index.php/$1 [L]
+</IfModule>
+
+php_value memory_limit 40M
+php_value post_max_size 20M
+php_value upload_max_filesize 20M  
+php_value max_input_vars 10000
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "public"
+  Header set Connection keep-alive
+</IfModule>
